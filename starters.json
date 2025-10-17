@@ -246,7 +246,7 @@
     "description": "Your naturally dense muscle and bone grant exceptional power and durability, providing a permanent +3 Strength bonus and excellent all-over armor. However, your sheer mass slows you down, resulting in 10% reduced movement speed and 20% slower attacks.",
     "starting_trait": true,
     "valid": false,
-    "points": 2, 
+    "points": 5, 
     "armor": [ { "parts": "ALL", "cut": 3, "bash": 3, "bullet": 3 } ],
     "speed_modifier": 0.9, 
     "attackcost_modifier" : 1.2,
@@ -259,7 +259,7 @@
     "description": "Your reflexes and swiftness are unmatched, granting +15% Movement Speed, +1 Dodge, and 10% faster attacks. This comes at at the cost of -25% MaxHP.",
     "starting_trait": true,
     "valid": false,
-    "points": 2, 
+    "points": 5, 
     "attackcost_modifier" : 0.9,
     "hp_modifier": -0.25, 
     "dodge_modifier" : 1,
@@ -305,5 +305,6 @@
     "points": 3
    }
  ]
+
 
 
