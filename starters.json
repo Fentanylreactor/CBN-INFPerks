@@ -95,8 +95,8 @@
   }, 
   {
     "type": "mutation",
-    "id": "inf_lightframe",
-    "name": { "str": "Focus on Agility" },
+    "id": "inf_lightstrikes",
+    "name": { "str": "Lightning Strikes" },
     "description": "Your lean builds has always given you a slight edge in a fight. Even if it took you a few punches for what others would take one. -2 STR, but a 15% Attack speed buff.",
     "starting_trait": true,
     "valid": false,
@@ -242,7 +242,7 @@
   {
     "type": "mutation",
     "id": "inf_heavyframe",
-    "name": { "str": "Heavy Frame" },
+    "name": { "str": "Built for Strength" },
     "description": "Your naturally dense muscle and bone grant exceptional power and durability, providing a permanent +3 Strength bonus and excellent all-over armor. However, your sheer mass slows you down, resulting in 10% reduced movement speed and 20% slower attacks.",
     "starting_trait": true,
     "valid": false,
@@ -305,4 +305,5 @@
     "points": 3
    }
  ]
+
 
