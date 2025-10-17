@@ -33,7 +33,7 @@
     "id": "inf_hardhands",
     "name": { "str": "Hard Hands" },
     "bash_dmg_bonus": 8,
-    "description": "Years of using your fists to solve problems has resulted in plenty of injuries. Injuries that healed and hardened your hand bones to be much stronger.",
+    "description": "Years of using your fists to solve problems has resulted in plenty of injuries. Injuries that healed and hardened your hand bones to give you +8 unarmed damage.",
     "starting_trait": true,
     "valid": false,
     "purifiable": false,  
@@ -307,6 +307,7 @@
     "points": 3
    }
  ]
+
 
 
 
