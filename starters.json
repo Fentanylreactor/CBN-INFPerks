@@ -15,14 +15,14 @@
   },
   {
     "type": "mutation",
-    "id": "Inf_regen",
+    "id": "Inf_degen",
     "name": { "str": "Deadblood" },
-    "points": 12,
+    "points": -12,
     "description": "You woke up and realised the cataclysm had permanently changed your body: You wounds don't heal anymore. Only advanced items and bionics that directly restore health seem to have an effect...",
     "starting_trait": true,
     "valid": false,
     "purifiable": false, 
-    "cancels": ["SUNBURN", "TROGLO2", "SMELLY2"  ],  
+    "cancels": ["FASTHEALER", "FASTHEALER2", "REGEN"  ],  
     "healing_awake": 0,
     "healing_resting": 0,
     "mending_modifier": 0
@@ -280,7 +280,7 @@
   }, 
   {
     "type": "mutation",
-    "id": "inf_lightframe",
+    "id": "inf_elecimp",
     "name": { "str": "Electroimpulse" },
     "description": "Your body has learned to harness the bionic energy stored inside of you, improving your reaction speed, muscle control and all around power. Requires bionic power to activate.",
     "starting_trait": true,
@@ -305,3 +305,4 @@
     "points": 3
    }
  ]
+
