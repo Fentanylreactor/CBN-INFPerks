@@ -1,0 +1,307 @@
+[
+{
+    "type": "mutation",
+    "id": "Inf_regen",
+    "name": { "str": "Fragile Regenerator" },
+    "points": 4,
+    "description": "While your body was always prone to injury, it also used to heal much faster than usual. 40% less HP, but broken bones can mend and healing is tripled. Stacks with all traits like Glass Jaw or Fragile! ",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "hp_modifier": -0.4, 
+    "healing_awake": 4,
+    "healing_resting": 3,
+    "mending_modifier": 3
+  },
+  {
+    "type": "mutation",
+    "id": "Inf_regen",
+    "name": { "str": "Deadblood" },
+    "points": 12,
+    "description": "You woke up and realised the cataclysm had permanently changed your body: You wounds don't heal anymore. Only advanced items and bionics that directly restore health seem to have an effect...",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "cancels": ["SUNBURN", "TROGLO2", "SMELLY2"  ],  
+    "healing_awake": 0,
+    "healing_resting": 0,
+    "mending_modifier": 0
+  },
+  {
+    "type": "mutation",
+    "id": "inf_hardhands",
+    "name": { "str": "Hard Hands" },
+    "bash_dmg_bonus": 8,
+    "description": "Years of using your fists to solve problems has resulted in plenty of injuries. Injuries that healed and hardened your hand bones to be much stronger.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,  
+    "points": 2
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_fastarms",
+    "name": { "str": "Unburdened Arms" },
+    "description": "Whether due to years of training, or simply your good genetics, you've never really felt the effects of encumbrance. Removes 10 points of encumbrance from your arms, and can go into the negative to provide bonuses.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "points": 3,
+    "encumbrance_always" : [
+    [ "ARM_L", -10 ],
+    [ "ARM_R", -10 ]
+]
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_fastLEGS",
+    "name": { "str": "Unburdened Legs" },
+    "description": "Whether due to years of training, or simply your good genetics, you've never really felt the effects of encumbrance. Removes 10 points of encumbrance from your legs, and can go into the negative to provide bonuses.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "points": 3,
+    "encumbrance_always" : [
+    [ "LEG_L", -10 ],
+    [ "LEG_R", -10 ]
+]
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_fastHANDS",
+    "name": { "str": "Unburdened Hands" },
+    "description": "Whether due to years of training, or simply your good genetics, you've never really felt the effects of encumbrance. Removes 10 points of encumbrance from your hands, and can go into the negative to provide bonuses.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "points": 3,
+    "encumbrance_always" : [
+    [ "HAND_L", -10 ],
+    [ "HAND_R", -10 ]
+]
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_fastTorso",
+    "name": { "str": "Unburdened Torso" },
+    "description": "Whether due to years of training, or simply your good genetics, you've never really felt the effects of encumbrance. Removes 10 points of encumbrance from your torso, and can go into the negative to provide bonuses.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "points": 4,
+    "encumbrance_always" : [
+    [ "TORSO", -10 ]
+]
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_lightframe",
+    "name": { "str": "Focus on Agility" },
+    "description": "Your lean builds has always given you a slight edge in a fight. Even if it took you a few punches for what others would take one. -2 STR, but a 15% Attack speed buff.",
+    "starting_trait": true,
+    "valid": false,
+    "points": 2, 
+    "attackcost_modifier" : 0.85,
+    "passive_mods" : {           "str_mod" : -2} 
+  }, 
+{
+    "type": "mutation",
+    "id": "inf_knifestart",
+    "name": { "str": "Combat Knife Start" },
+    "points": 1,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A combat knife.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "knife_combat",
+    "bonus": { "present": [ "inf_knifestart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_ZWEIstart",
+    "name": { "str": "Zweihänder Start" },
+    "points": 3,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A ZWEIHÄNDER!?!.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "zweihander",
+    "bonus": { "present": [ "inf_ZWEIstart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_nodastart",
+    "name": { "str": "Nodachi Start" },
+    "points": 3,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A JAPANESE GREAT SWORD!?!",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "nodachi",
+    "bonus": { "present": [ "inf_nodastart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_multitoolstart",
+    "name": { "str": "Multitool Start" },
+    "points": 1,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A Multi tool.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "multitool",
+    "bonus": { "present": [ "inf_multitoolstart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_medstart",
+    "name": { "str": "Medkit Start" },
+    "points": 1,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A small first aid kid.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "1st_aid",
+    "bonus": { "present": [ "inf_medstart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_crowstart",
+    "name": { "str": "Crowbar Start" },
+    "points": 2,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A crowbar.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "crowbar",
+    "bonus": { "present": [ "inf_crowstart" ] }
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_cestusstart",
+    "name": { "str": "Cestus Start" },
+    "points": 1,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: A Cestus.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "cestus",
+    "bonus": { "present": [ "inf_cestusstart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_katanastart",
+    "name": { "str": "Katana Start" },
+    "points": 1,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former weeb self left you a gift: A KATANA!?!",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "katana",
+    "bonus": { "present": [ "inf_katanastart" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "inf_potstart",
+    "name": { "str": "Atompot Start" },
+    "points": 1,
+    "description": "Whether your previous self had a gut feeling something was wrong, or just plain ol' luck, your former self left you a gift: An Atompot.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "afs_atompot",
+    "bonus": { "present": [ "inf_potstart" ] }
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_heavyframe",
+    "name": { "str": "Heavy Frame" },
+    "description": "Your naturally dense muscle and bone grant exceptional power and durability, providing a permanent +3 Strength bonus and excellent all-over armor. However, your sheer mass slows you down, resulting in 10% reduced movement speed and 20% slower attacks.",
+    "starting_trait": true,
+    "valid": false,
+    "points": 2, 
+    "armor": [ { "parts": "ALL", "cut": 3, "bash": 3, "bullet": 3 } ],
+    "speed_modifier": 0.9, 
+    "attackcost_modifier" : 1.2,
+    "passive_mods" : { "str_mod" : 3} 
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_speedbuild",
+    "name": { "str": "Built For Speed" },
+    "description": "Your reflexes and swiftness are unmatched, granting +15% Movement Speed, +1 Dodge, and 10% faster attacks. This comes at at the cost of -25% MaxHP.",
+    "starting_trait": true,
+    "valid": false,
+    "points": 2, 
+    "attackcost_modifier" : 0.9,
+    "hp_modifier": -0.25, 
+    "dodge_modifier" : 1,
+    "speed_modifier" : 1.15,
+    "purifiable": false
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_bogenius",
+    "name": { "str": "Burnt-out Genius" },
+    "description": "Years of all nighters and relentless studying have taken a toll on your body. While you read 10% faster and get +2 Intelligence, your sleep quality has become slightly worse and you suffer a -2 Strength.",
+    "starting_trait": true,
+    "valid": false,
+    "points": 2, 
+    "reading_speed_multiplier": 0.9,                       "fatigue_regen_modifier": 1.2,
+    "passive_mods": { "int_mod": 2, "str_mod": -2},
+    "purifiable": false
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_lightframe",
+    "name": { "str": "Electroimpulse" },
+    "description": "Your body has learned to harness the bionic energy stored inside of you, improving your reaction speed, muscle control and all around power. Requires bionic power to activate.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "points": 2, 
+    "speed_modifier" : 1.4,
+    "active" : true,
+    "cost" : 10,
+    "time" : 100,
+    "bionic" : true
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_geneticperfection",
+    "name": { "str": "Genetic Perfection" },
+    "description": "You are the peak of the human genome. Your form is genetically perfect. You cannot acquire most negative mutations related to weakness, rot, deformity, or sensory loss. May lock you out of certain mutation paths.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false, 
+    "cancels": ["ROT1", "ROT2", "ROT3","CHAOTIC_BAD", "CHAOTIC", "UNSTABLE","NAUSEA", "VOMITOUS", "DEAF","DEFORMED3", "DEFORMED2", "DEFORMED", "UGLY", "CHEMIMBALANCE", "BADBACK", "FLIMSY2", "FLIMSY", "FLIMSY3", "JITTERY", "PONDEROUS3", "PONDEROUS1", "PONDEROUS2", "SUNLIGHT_DEPENDENT", "TROGLO", "TROGLO3", "SUNBURN", "TROGLO2", "SMELLY2"  ], 
+    "points": 3
+   }
+ ]

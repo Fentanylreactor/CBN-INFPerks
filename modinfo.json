@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "INF_Infinitenight",
+    "name": "Infinite Night",
+    "authors": [ "fentoid" ],
+    "description": "testing",
+    "category": "content",
+    "dependencies": [ "bn" ]
+  }
+]
