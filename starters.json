@@ -271,43 +271,69 @@
     "type": "mutation",
     "id": "inf_bogenius",
     "name": { "str": "Burnt-out Genius" },
-    "description": "Years of all nighters and relentless studying have taken a toll on your body. While you read 10% faster and get +2 Intelligence, your sleep quality has become slightly worse and you suffer a -2 Strength.",
+    "description": "Years of all nighters and relentless studying have taken a toll on your body. While you read 10% faster and get +3 Intelligence, your sleep quality has become slightly worse and you suffer a -2 Strength.",
     "starting_trait": true,
     "valid": false,
     "points": 2, 
     "reading_speed_multiplier": 0.9,                       "fatigue_regen_modifier": 1.2,
-    "passive_mods": { "int_mod": 2, "str_mod": -2},
+    "passive_mods": { "int_mod": 3, "str_mod": -2},
     "purifiable": false
   }, 
   {
     "type": "mutation",
-    "id": "inf_elecimp",
-    "name": { "str": "Electroimpulse" },
-    "description": "Your body has learned to harness the bionic energy stored inside of you, improving your speed massuvely. Requires bionic power to activate.",
+    "id": "inf_alibrarian",
+    "name": { "str": "Apex Librarian" },
+    "description": "The cataclysm seems to have changed your body: Both your intelligence and perception are radically improved (+4), your reading speed is 40% faster and you require 30% less sleep. In exchange, your body is weaker (-4) and less dextrous(-4) than what it used to be.",
+    "cancels": ["inf_abrute", "inf_acraft", "inf_ahunter" ],  
     "starting_trait": true,
     "valid": false,
-    "purifiable": false, 
-    "points": 5, 
-    "speed_modifier" : 1.4,
-    "dodge_modifier" : 1,
-    "active" : true,
-    "cost" : 10,
-    "time" : 100,
-    "bionic" : true
+    "points": 2, 
+    "reading_speed_multiplier": 0.6,  
+    "passive_mods": { "per_mod": 4,"int_mod": 4,"str_mod": -4,"dex_mod": -4},
+    "fatigue_modifier": -0.3, 
+    "purifiable": false
   }, 
   {
     "type": "mutation",
-    "id": "inf_geneticperfection",
-    "name": { "str": "Genetic Perfection" },
-    "description": "You are the peak of the human genome. Your form is genetically perfect. You cannot acquire most negative mutations related to weakness, rot, deformity, or sensory loss. May lock you out of certain mutation paths.",
+    "id": "inf_abrute",
+    "name": { "str": "Apex Brute" },
+    "description": "The cataclysm seems to have changed your body: Both your strength (+4) and dexterity are radically improved (+4), your attacks are slightly faster (5%) and encumbrance affects you less (-5 Torso, -3 Arms) . In exchange, you're not the brightest and less perceptive (-4).",
+    "cancels": ["inf_ahunter", "inf_acraft", "inf_alibrarian" ],  
     "starting_trait": true,
     "valid": false,
-    "purifiable": false, 
-    "cancels": ["ROT1", "ROT2", "ROT3","CHAOTIC_BAD", "CHAOTIC", "UNSTABLE","NAUSEA", "VOMITOUS", "DEAF","DEFORMED3", "DEFORMED2", "DEFORMED", "UGLY", "CHEMIMBALANCE", "BADBACK", "FLIMSY2", "FLIMSY", "FLIMSY3", "JITTERY", "PONDEROUS3", "PONDEROUS1", "PONDEROUS2", "SUNLIGHT_DEPENDENT", "TROGLO", "TROGLO3", "SUNBURN", "TROGLO2", "SMELLY2"  ], 
-    "points": 3
+    "points": 2, 
+    "attackcost_modifier" : 0.95,
+    "passive_mods": { "per_mod": -4,"int_mod": -4,"str_mod": 4,"dex_mod": 4},
+    "encumbrance_always" : [
+    [ "ARM_L", -3 ],
+    [ "ARM_R", -3 ], 
+    [ "TORSO", -5 ]
+],
+    "purifiable": false
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_acraft",
+    "name": { "str": "Apex Craftsman" },
+    "description": "The cataclysm seems to have changed your body: Both your strength (+4) and intelligence (+4) are radically improved, your carry weight is increased by 30% and your stamina regen is slightly increased (15%). In exchange, you're not the brightest and less perceptive (-4).",
+    "cancels": ["inf_abrute", "inf_ahunter", "inf_alibrarian" ],  
+    "starting_trait": true,
+    "valid": false,
+    "points": 2, 
+    "passive_mods": { "per_mod": -4,"int_mod": 4,"str_mod": 4,"dex_mod": -4},
+    "purifiable": false
+  }, 
+  {
+    "type": "mutation",
+    "id": "inf_ahunter",
+    "name": { "str": "Apex Hunter" },
+    "description": "The cataclysm seems to have changed your body: Both your Perception (+6) and dexterity (+4) are radically improved, you're faster (10%), and even faster on flat ground (20%). In exchange, you're not the brightest (-4) and weaker (-4).",
+    "cancels": ["inf_abrute", "inf_acraft", "inf_alibrarian" ],  
+    "starting_trait": true,
+    "valid": false,
+    "points": 2, 
+    "passive_mods": { "per_mod": 6,"int_mod": -4,"str_mod": -4,"dex_mod": 4},
+    "speed_modifier": 1.10,
+    "movecost_flatground_modifier": 0.8
    }
- ]
-
-
-
-
+  ] 
